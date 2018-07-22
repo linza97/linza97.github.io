@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lab3.css">
+    <title> LAB_3</title>
+  </head>
+  <body>
+    
+<form>
+        <h1>Payment form</h1>
+        <p> <u>Required fields are followed by </u> <strong><abbr title="required">*</abbr></strong>.</p>
+        <section>
+            <h2> <strong>Contact information</strong></h2>
+            <fieldset>
+              <legend>Title</legend>
+<div>
+              
+                  <li>
+                    <label for="title_1">
+                      <input type="radio" id="title_1" name="title" value="Mr." >
+                      Mister
+                    </label>
+                  </li>
+                  <li>
+                    <label for="title_2">
+                      <input type="radio" id="title_2" name="title" value="Ms.">
+                      Miss
+                    </label>
+                  </li>
+              </div>
+            </fieldset>
+
+<fieldset>
+            <div>
+<label for="name">NMAE:</label>
+
+<input type="text" id="name" name="user_name">
+<strong><abbr title="required">*</abbr></strong>
+
+</div>
+<div>
+<label for="mail"> E-MAIL:</label>
+
+<input type="email" id="mail" name="user_mail">
+<strong><abbr title="required">*</abbr></strong>
+</div>
+          <div>
+              <label for="password"> PASSWORD:<label>
+                
+               
+              
+   <input type="password" id="pwd" name="password">
+     <strong><abbr title="required">*</abbr></strong>
+            </div>
+ </fieldset>
+
+
+
+        </section>
+
+
+        <section>
+
+     <h2>Payment information</h2>       
+ <fieldset>
+ 
+            <div>
+              <label for="card"> <legend> TYPES OF CARD </legend> </label>
+                
+              
+              <select id="card" name="usercard">
+                <option value="visa">Visa</option>
+                <option value="mc">Mastercard</option>
+                <option value="amex">American Express</option>
+              </select>
+</div>
+            
+
+
+
+            <div>
+              <label for="number"> <b>Card Number: </b> </label>
+                
+                <strong><abbr title="required">*</abbr></strong>
+              
+                <input type="text" id="number" name="cardnumber">
+            </div>
+
+            <div>
+              <label for="date">Expiration date:</label>
+                <strong><abbr title="required">*</abbr></strong>
+
+                
+              </label>
+              <input type="date"/></br>
+<input type="submit">
+           
+        </section>
+        <section>
+            <p> <button type="submit">Validate the payment</button> </p>
+        </section>
+<div>
+    <input type="reset" value="Reset the form">
+  </div>
+
+</fieldset>
+    </form>
+  </body>
+</html>
